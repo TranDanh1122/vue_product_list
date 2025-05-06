@@ -10,13 +10,21 @@ interface Paginate {
     limit: number,
     offset: number
 }
-interface ProductStoreState {
+interface ProductGetters  {
+    filteredAllProduct: Product[]
+    filteredProduct: Product[]
+    isLastPage: boolean
+    numberOfPage: number
+    currentPage: number
+}
+interface ProductStoreState extends Partial<ProductGetters> {
     products: Product[],
     filter: Filter,
     paginate: Paginate,
     loading: boolean,
     errorMessages: string,
 }
+
 export const useProductList = defineStore('products', {
     state: (): ProductStoreState => ({
         products: [] as Product[],
@@ -61,13 +69,28 @@ export const useProductList = defineStore('products', {
         },
         search(val: string) {
             this.filter.search = val
+            this.paginate.offset = 0 
         }
     },
     getters: {
-        total(state) {
-            return state.products.length
+        total() : number {
+            return this.filteredAllProduct?.length ?? 0
         },
-        filteredProduct(state) {
+        isFirstPage(state) {
+            return state.paginate.offset == 0
+        },
+        isLastPage(state) {
+            return state.paginate.offset + state.paginate.limit >= (this.filteredAllProduct?.length  ?? 0)
+        },
+        numberOfPage(state) {
+            return Math.ceil((this.filteredAllProduct?.length ?? 1) / state.paginate.limit)
+        },
+        currentPage(state) {
+            if(state.paginate.offset == 0) return 1
+            return Math.ceil(state.paginate.offset / state.paginate.limit ) + 1
+        },
+
+        filteredAllProduct (state) {
             let result = [...state.products]
             if (state.filter.search) {
                 const searchStr = state.filter.search.toLocaleLowerCase().trim()
@@ -85,9 +108,11 @@ export const useProductList = defineStore('products', {
                     return 0
                 })
             }
-            result = result.slice(state.paginate.offset, state.paginate.limit + state.paginate.offset)
-            console.log(result);
             return result
-        }
+        },
+        filteredProduct(state) {
+            const result = this.filteredAllProduct ?? []
+            return result.slice(state.paginate.offset, state.paginate.offset + state.paginate.limit)
+        },
     }
 })

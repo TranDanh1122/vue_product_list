@@ -21,7 +21,7 @@ watch(inputRef, () => {
 })
 </script>
 <template>
-  <div class="flex items-center mb-4">
+  <div class="flex items-center mb-6 border border-rose-300 rounded-md px-4 py-2">
     <div class="flex flex-col gap-2">
       <label for="search" class="text-4-bold text-rose-900">Search</label>
       <input v-model="inputRef" type="text" id="search"
