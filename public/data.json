@@ -1,0 +1,782 @@
+[
+    {
+        "id" : 1,
+        "image": {
+          "thumbnail": "./assets/images/image-waffle-thumbnail.jpg",
+          "mobile": "./assets/images/image-waffle-mobile.jpg",
+          "tablet": "./assets/images/image-waffle-tablet.jpg",
+          "desktop": "./assets/images/image-waffle-desktop.jpg"
+        },
+        "name": "Waffle with Berries",
+        "category": "Waffle",
+        "price": 6.50
+      },
+      {
+        "id" : 2,
+        "image": {
+          "thumbnail": "./assets/images/image-waffle-thumbnail.jpg",
+          "mobile": "./assets/images/image-waffle-mobile.jpg",
+          "tablet": "./assets/images/image-waffle-tablet.jpg",
+          "desktop": "./assets/images/image-waffle-desktop.jpg"
+        },
+        "name": "Chocolate Drizzle Waffle",
+        "category": "Waffle",
+        "price": 7.00
+      },
+      {
+        "id" : 3,
+        "image": {
+          "thumbnail": "./assets/images/image-waffle-thumbnail.jpg",
+          "mobile": "./assets/images/image-waffle-mobile.jpg",
+          "tablet": "./assets/images/image-waffle-tablet.jpg",
+          "desktop": "./assets/images/image-waffle-desktop.jpg"
+        },
+        "name": "Banana Caramel Waffle",
+        "category": "Waffle",
+        "price": 6.75
+      },
+      {
+        "id" : 4,
+        "image": {
+          "thumbnail": "./assets/images/image-waffle-thumbnail.jpg",
+          "mobile": "./assets/images/image-waffle-mobile.jpg",
+          "tablet": "./assets/images/image-waffle-tablet.jpg",
+          "desktop": "./assets/images/image-waffle-desktop.jpg"
+        },
+        "name": "Nutella Waffle Supreme",
+        "category": "Waffle",
+        "price": 7.50
+      },
+      {
+        "id" : 5,
+        "image": {
+          "thumbnail": "./assets/images/image-waffle-thumbnail.jpg",
+          "mobile": "./assets/images/image-waffle-mobile.jpg",
+          "tablet": "./assets/images/image-waffle-tablet.jpg",
+          "desktop": "./assets/images/image-waffle-desktop.jpg"
+        },
+        "name": "Strawberry Dream Waffle",
+        "category": "Waffle",
+        "price": 6.25
+      },
+      {
+        "id" : 6,
+        "image": {
+          "thumbnail": "./assets/images/image-creme-brulee-thumbnail.jpg",
+          "mobile": "./assets/images/image-creme-brulee-mobile.jpg",
+          "tablet": "./assets/images/image-creme-brulee-tablet.jpg",
+          "desktop": "./assets/images/image-creme-brulee-desktop.jpg"
+        },
+        "name": "Vanilla Bean Crème Brûlée",
+        "category": "Crème Brûlée",
+        "price": 7.00
+      },
+      {
+        "id" : 7,
+        "image": {
+          "thumbnail": "./assets/images/image-creme-brulee-thumbnail.jpg",
+          "mobile": "./assets/images/image-creme-brulee-mobile.jpg",
+          "tablet": "./assets/images/image-creme-brulee-tablet.jpg",
+          "desktop": "./assets/images/image-creme-brulee-desktop.jpg"
+        },
+        "name": "Chocolate Crème Brûlée",
+        "category": "Crème Brûlée",
+        "price": 7.50
+      },
+      {
+        "id" : 8,
+        "image": {
+          "thumbnail": "./assets/images/image-creme-brulee-thumbnail.jpg",
+          "mobile": "./assets/images/image-creme-brulee-mobile.jpg",
+          "tablet": "./assets/images/image-creme-brulee-tablet.jpg",
+          "desktop": "./assets/images/image-creme-brulee-desktop.jpg"
+        },
+        "name": "Espresso Crème Brûlée",
+        "category": "Crème Brûlée",
+        "price": 7.25
+      },
+      {
+        "id" : 9,
+        "image": {
+          "thumbnail": "./assets/images/image-creme-brulee-thumbnail.jpg",
+          "mobile": "./assets/images/image-creme-brulee-mobile.jpg",
+          "tablet": "./assets/images/image-creme-brulee-tablet.jpg",
+          "desktop": "./assets/images/image-creme-brulee-desktop.jpg"
+        },
+        "name": "Lavender Crème Brûlée",
+        "category": "Crème Brûlée",
+        "price": 7.75
+      },
+      {
+        "id" : 10,
+        "image": {
+          "thumbnail": "./assets/images/image-creme-brulee-thumbnail.jpg",
+          "mobile": "./assets/images/image-creme-brulee-mobile.jpg",
+          "tablet": "./assets/images/image-creme-brulee-tablet.jpg",
+          "desktop": "./assets/images/image-creme-brulee-desktop.jpg"
+        },
+        "name": "Matcha Crème Brûlée",
+        "category": "Crème Brûlée",
+        "price": 8.00
+      },
+      {
+        "id" : 11,
+        "image": {
+          "thumbnail": "./assets/images/image-macaron-thumbnail.jpg",
+          "mobile": "./assets/images/image-macaron-mobile.jpg",
+          "tablet": "./assets/images/image-macaron-tablet.jpg",
+          "desktop": "./assets/images/image-macaron-desktop.jpg"
+        },
+        "name": "Macaron Mix of Five",
+        "category": "Macaron",
+        "price": 8.00
+      },
+      {
+        "id" : 12,
+        "image": {
+          "thumbnail": "./assets/images/image-macaron-thumbnail.jpg",
+          "mobile": "./assets/images/image-macaron-mobile.jpg",
+          "tablet": "./assets/images/image-macaron-tablet.jpg",
+          "desktop": "./assets/images/image-macaron-desktop.jpg"
+        },
+        "name": "Chocolate Ganache Macarons",
+        "category": "Macaron",
+        "price": 7.50
+      },
+      {
+        "id" : 13,
+        "image": {
+          "thumbnail": "./assets/images/image-macaron-thumbnail.jpg",
+          "mobile": "./assets/images/image-macaron-mobile.jpg",
+          "tablet": "./assets/images/image-macaron-tablet.jpg",
+          "desktop": "./assets/images/image-macaron-desktop.jpg"
+        },
+        "name": "Raspberry Macarons",
+        "category": "Macaron",
+        "price": 7.00
+      },
+      {
+        "id" : 14,
+        "image": {
+          "thumbnail": "./assets/images/image-macaron-thumbnail.jpg",
+          "mobile": "./assets/images/image-macaron-mobile.jpg",
+          "tablet": "./assets/images/image-macaron-tablet.jpg",
+          "desktop": "./assets/images/image-macaron-desktop.jpg"
+        },
+        "name": "Pistachio Macaron Duo",
+        "category": "Macaron",
+        "price": 4.50
+      },
+      {
+        "id" : 15,
+        "image": {
+          "thumbnail": "./assets/images/image-macaron-thumbnail.jpg",
+          "mobile": "./assets/images/image-macaron-mobile.jpg",
+          "tablet": "./assets/images/image-macaron-tablet.jpg",
+          "desktop": "./assets/images/image-macaron-desktop.jpg"
+        },
+        "name": "Lavender Macaron Trio",
+        "category": "Macaron",
+        "price": 6.00
+      },
+      {
+        "id" : 16,
+        "image": {
+          "thumbnail": "./assets/images/image-tiramisu-thumbnail.jpg",
+          "mobile": "./assets/images/image-tiramisu-mobile.jpg",
+          "tablet": "./assets/images/image-tiramisu-tablet.jpg",
+          "desktop": "./assets/images/image-tiramisu-desktop.jpg"
+        },
+        "name": "Classic Tiramisu",
+        "category": "Tiramisu",
+        "price": 5.50
+      },
+      {
+        "id" : 17,
+        "image": {
+          "thumbnail": "./assets/images/image-tiramisu-thumbnail.jpg",
+          "mobile": "./assets/images/image-tiramisu-mobile.jpg",
+          "tablet": "./assets/images/image-tiramisu-tablet.jpg",
+          "desktop": "./assets/images/image-tiramisu-desktop.jpg"
+        },
+        "name": "Strawberry Tiramisu",
+        "category": "Tiramisu",
+        "price": 6.00
+      },
+      {
+        "id" : 18,
+        "image": {
+          "thumbnail": "./assets/images/image-tiramisu-thumbnail.jpg",
+          "mobile": "./assets/images/image-tiramisu-mobile.jpg",
+          "tablet": "./assets/images/image-tiramisu-tablet.jpg",
+          "desktop": "./assets/images/image-tiramisu-desktop.jpg"
+        },
+        "name": "Matcha Tiramisu",
+        "category": "Tiramisu",
+        "price": 6.25
+      },
+      {
+        "id" : 19,
+        "image": {
+          "thumbnail": "./assets/images/image-tiramisu-thumbnail.jpg",
+          "mobile": "./assets/images/image-tiramisu-mobile.jpg",
+          "tablet": "./assets/images/image-tiramisu-tablet.jpg",
+          "desktop": "./assets/images/image-tiramisu-desktop.jpg"
+        },
+        "name": "Raspberry Tiramisu",
+        "category": "Tiramisu",
+        "price": 6.00
+      },
+      {
+        "id" : 20,
+        "image": {
+          "thumbnail": "./assets/images/image-tiramisu-thumbnail.jpg",
+          "mobile": "./assets/images/image-tiramisu-mobile.jpg",
+          "tablet": "./assets/images/image-tiramisu-tablet.jpg",
+          "desktop": "./assets/images/image-tiramisu-desktop.jpg"
+        },
+        "name": "Chocolate Orange Tiramisu",
+        "category": "Tiramisu",
+        "price": 6.50
+      },
+      {
+        "id" : 21,
+        "image": {
+          "thumbnail": "./assets/images/image-baklava-thumbnail.jpg",
+          "mobile": "./assets/images/image-baklava-mobile.jpg",
+          "tablet": "./assets/images/image-baklava-tablet.jpg",
+          "desktop": "./assets/images/image-baklava-desktop.jpg"
+        },
+        "name": "Pistachio Baklava",
+        "category": "Baklava",
+        "price": 4.00
+      },
+      {
+        "id" : 22,
+        "image": {
+          "thumbnail": "./assets/images/image-baklava-thumbnail.jpg",
+          "mobile": "./assets/images/image-baklava-mobile.jpg",
+          "tablet": "./assets/images/image-baklava-tablet.jpg",
+          "desktop": "./assets/images/image-baklava-desktop.jpg"
+        },
+        "name": "Walnut Baklava",
+        "category": "Baklava",
+        "price": 4.00
+      },
+      {
+        "id" : 23,
+        "image": {
+          "thumbnail": "./assets/images/image-baklava-thumbnail.jpg",
+          "mobile": "./assets/images/image-baklava-mobile.jpg",
+          "tablet": "./assets/images/image-baklava-tablet.jpg",
+          "desktop": "./assets/images/image-baklava-desktop.jpg"
+        },
+        "name": "Honey Almond Baklava",
+        "category": "Baklava",
+        "price": 4.25
+      },
+      {
+        "id" : 24,
+        "image": {
+          "thumbnail": "./assets/images/image-baklava-thumbnail.jpg",
+          "mobile": "./assets/images/image-baklava-mobile.jpg",
+          "tablet": "./assets/images/image-baklava-tablet.jpg",
+          "desktop": "./assets/images/image-baklava-desktop.jpg"
+        },
+        "name": "Chocolate Baklava",
+        "category": "Baklava",
+        "price": 4.50
+      },
+      {
+        "id" : 25,
+        "image": {
+          "thumbnail": "./assets/images/image-baklava-thumbnail.jpg",
+          "mobile": "./assets/images/image-baklava-mobile.jpg",
+          "tablet": "./assets/images/image-baklava-tablet.jpg",
+          "desktop": "./assets/images/image-baklava-desktop.jpg"
+        },
+        "name": "Rose Water Baklava",
+        "category": "Baklava",
+        "price": 4.75
+      },
+      {
+        "id" : 26,
+        "image": {
+          "thumbnail": "./assets/images/image-meringue-thumbnail.jpg",
+          "mobile": "./assets/images/image-meringue-mobile.jpg",
+          "tablet": "./assets/images/image-meringue-tablet.jpg",
+          "desktop": "./assets/images/image-meringue-desktop.jpg"
+        },
+        "name": "Lemon Meringue Pie",
+        "category": "Pie",
+        "price": 5.00
+      },
+      {
+        "id" : 27,
+        "image": {
+          "thumbnail": "./assets/images/image-meringue-thumbnail.jpg",
+          "mobile": "./assets/images/image-meringue-mobile.jpg",
+          "tablet": "./assets/images/image-meringue-tablet.jpg",
+          "desktop": "./assets/images/image-meringue-desktop.jpg"
+        },
+        "name": "Key Lime Meringue Pie",
+        "category": "Pie",
+        "price": 5.25
+      },
+      {
+        "id" : 28,
+        "image": {
+          "thumbnail": "./assets/images/image-meringue-thumbnail.jpg",
+          "mobile": "./assets/images/image-meringue-mobile.jpg",
+          "tablet": "./assets/images/image-meringue-tablet.jpg",
+          "desktop": "./assets/images/image-meringue-desktop.jpg"
+        },
+        "name": "Mixed Berry Meringue Pie",
+        "category": "Pie",
+        "price": 5.50
+      },
+      {
+        "id" : 29,
+        "image": {
+          "thumbnail": "./assets/images/image-meringue-thumbnail.jpg",
+          "mobile": "./assets/images/image-meringue-mobile.jpg",
+          "tablet": "./assets/images/image-meringue-tablet.jpg",
+          "desktop": "./assets/images/image-meringue-desktop.jpg"
+        },
+        "name": "Chocolate Meringue Pie",
+        "category": "Pie",
+        "price": 5.25
+      },
+      {
+        "id" : 30,
+        "image": {
+          "thumbnail": "./assets/images/image-meringue-thumbnail.jpg",
+          "mobile": "./assets/images/image-meringue-mobile.jpg",
+          "tablet": "./assets/images/image-meringue-tablet.jpg",
+          "desktop": "./assets/images/image-meringue-desktop.jpg"
+        },
+        "name": "Passion Fruit Meringue Tart",
+        "category": "Tart",
+        "price": 5.75
+      },
+      {
+        "id" : 31,
+        "image": {
+          "thumbnail": "./assets/images/image-cake-thumbnail.jpg",
+          "mobile": "./assets/images/image-cake-mobile.jpg",
+          "tablet": "./assets/images/image-cake-tablet.jpg",
+          "desktop": "./assets/images/image-cake-desktop.jpg"
+        },
+        "name": "Red Velvet Cake",
+        "category": "Cake",
+        "price": 4.50
+      },
+      {
+        "id" : 32,
+        "image": {
+          "thumbnail": "./assets/images/image-cake-thumbnail.jpg",
+          "mobile": "./assets/images/image-cake-mobile.jpg",
+          "tablet": "./assets/images/image-cake-tablet.jpg",
+          "desktop": "./assets/images/image-cake-desktop.jpg"
+        },
+        "name": "Chocolate Layer Cake",
+        "category": "Cake",
+        "price": 4.75
+      },
+      {
+        "id" : 33,
+        "image": {
+          "thumbnail": "./assets/images/image-cake-thumbnail.jpg",
+          "mobile": "./assets/images/image-cake-mobile.jpg",
+          "tablet": "./assets/images/image-cake-tablet.jpg",
+          "desktop": "./assets/images/image-cake-desktop.jpg"
+        },
+        "name": "Carrot Cake",
+        "category": "Cake",
+        "price": 4.25
+      },
+      {
+        "id" : 34,
+        "image": {
+          "thumbnail": "./assets/images/image-cake-thumbnail.jpg",
+          "mobile": "./assets/images/image-cake-mobile.jpg",
+          "tablet": "./assets/images/image-cake-tablet.jpg",
+          "desktop": "./assets/images/image-cake-desktop.jpg"
+        },
+        "name": "Vanilla Bean Cake",
+        "category": "Cake",
+        "price": 4.00
+      },
+      {
+        "id" : 35,
+        "image": {
+          "thumbnail": "./assets/images/image-cake-thumbnail.jpg",
+          "mobile": "./assets/images/image-cake-mobile.jpg",
+          "tablet": "./assets/images/image-cake-tablet.jpg",
+          "desktop": "./assets/images/image-cake-desktop.jpg"
+        },
+        "name": "Lemon Raspberry Cake",
+        "category": "Cake",
+        "price": 5.00
+      },
+      {
+        "id" : 36,
+        "image": {
+          "thumbnail": "./assets/images/image-brownie-thumbnail.jpg",
+          "mobile": "./assets/images/image-brownie-mobile.jpg",
+          "tablet": "./assets/images/image-brownie-tablet.jpg",
+          "desktop": "./assets/images/image-brownie-desktop.jpg"
+        },
+        "name": "Salted Caramel Brownie",
+        "category": "Brownie",
+        "price": 4.50
+      },
+      {
+        "id" : 37,
+        "image": {
+          "thumbnail": "./assets/images/image-brownie-thumbnail.jpg",
+          "mobile": "./assets/images/image-brownie-mobile.jpg",
+          "tablet": "./assets/images/image-brownie-tablet.jpg",
+          "desktop": "./assets/images/image-brownie-desktop.jpg"
+        },
+        "name": "Double Chocolate Brownie",
+        "category": "Brownie",
+        "price": 4.25
+      },
+      {
+        "id" : 38,
+        "image": {
+          "thumbnail": "./assets/images/image-brownie-thumbnail.jpg",
+          "mobile": "./assets/images/image-brownie-mobile.jpg",
+          "tablet": "./assets/images/image-brownie-tablet.jpg",
+          "desktop": "./assets/images/image-brownie-desktop.jpg"
+        },
+        "name": "Walnut Fudge Brownie",
+        "category": "Brownie",
+        "price": 4.50
+      },
+      {
+        "id" : 39,
+        "image": {
+          "thumbnail": "./assets/images/image-brownie-thumbnail.jpg",
+          "mobile": "./assets/images/image-brownie-mobile.jpg",
+          "tablet": "./assets/images/image-brownie-tablet.jpg",
+          "desktop": "./assets/images/image-brownie-desktop.jpg"
+        },
+        "name": "Raspberry Swirl Brownie",
+        "category": "Brownie",
+        "price": 4.75
+      },
+      {
+        "id" : 40,
+        "image": {
+          "thumbnail": "./assets/images/image-brownie-thumbnail.jpg",
+          "mobile": "./assets/images/image-brownie-mobile.jpg",
+          "tablet": "./assets/images/image-brownie-tablet.jpg",
+          "desktop": "./assets/images/image-brownie-desktop.jpg"
+        },
+        "name": "Mint Chocolate Brownie",
+        "category": "Brownie",
+        "price": 4.75
+      },
+      {
+        "id" : 41,
+        "image": {
+          "thumbnail": "./assets/images/image-panna-cotta-thumbnail.jpg",
+          "mobile": "./assets/images/image-panna-cotta-mobile.jpg",
+          "tablet": "./assets/images/image-panna-cotta-tablet.jpg",
+          "desktop": "./assets/images/image-panna-cotta-desktop.jpg"
+        },
+        "name": "Vanilla Panna Cotta",
+        "category": "Panna Cotta",
+        "price": 6.50
+      },
+      {
+        "id" : 42,
+        "image": {
+          "thumbnail": "./assets/images/image-panna-cotta-thumbnail.jpg",
+          "mobile": "./assets/images/image-panna-cotta-mobile.jpg",
+          "tablet": "./assets/images/image-panna-cotta-tablet.jpg",
+          "desktop": "./assets/images/image-panna-cotta-desktop.jpg"
+        },
+        "name": "Berry Coulis Panna Cotta",
+        "category": "Panna Cotta",
+        "price": 7.00
+      },
+      {
+        "id" : 43,
+        "image": {
+          "thumbnail": "./assets/images/image-panna-cotta-thumbnail.jpg",
+          "mobile": "./assets/images/image-panna-cotta-mobile.jpg",
+          "tablet": "./assets/images/image-panna-cotta-tablet.jpg",
+          "desktop": "./assets/images/image-panna-cotta-desktop.jpg"
+        },
+        "name": "Caramel Panna Cotta",
+        "category": "Panna Cotta",
+        "price": 6.75
+      },
+      {
+        "id" : 44,
+        "image": {
+          "thumbnail": "./assets/images/image-panna-cotta-thumbnail.jpg",
+          "mobile": "./assets/images/image-panna-cotta-mobile.jpg",
+          "tablet": "./assets/images/image-panna-cotta-tablet.jpg",
+          "desktop": "./assets/images/image-panna-cotta-desktop.jpg"
+        },
+        "name": "Chocolate Panna Cotta",
+        "category": "Panna Cotta",
+        "price": 6.75
+      },
+      {
+        "id" : 45,
+        "image": {
+          "thumbnail": "./assets/images/image-panna-cotta-thumbnail.jpg",
+          "mobile": "./assets/images/image-panna-cotta-mobile.jpg",
+          "tablet": "./assets/images/image-panna-cotta-tablet.jpg",
+          "desktop": "./assets/images/image-panna-cotta-desktop.jpg"
+        },
+        "name": "Coconut Mango Panna Cotta",
+        "category": "Panna Cotta",
+        "price": 7.25
+      },
+      {
+        "id" : 46,
+        "image": {
+          "thumbnail": "./assets/images/image-waffle-thumbnail.jpg",
+          "mobile": "./assets/images/image-waffle-mobile.jpg",
+          "tablet": "./assets/images/image-waffle-tablet.jpg",
+          "desktop": "./assets/images/image-waffle-desktop.jpg"
+        },
+        "name": "Maple Bacon Waffle",
+        "category": "Waffle",
+        "price": 7.50
+      },
+      {
+        "id" : 47,
+        "image": {
+          "thumbnail": "./assets/images/image-waffle-thumbnail.jpg",
+          "mobile": "./assets/images/image-waffle-mobile.jpg",
+          "tablet": "./assets/images/image-waffle-tablet.jpg",
+          "desktop": "./assets/images/image-waffle-desktop.jpg"
+        },
+        "name": "Blueberry Compote Waffle",
+        "category": "Waffle",
+        "price": 6.75
+      },
+      {
+        "id" : 48,
+        "image": {
+          "thumbnail": "./assets/images/image-waffle-thumbnail.jpg",
+          "mobile": "./assets/images/image-waffle-mobile.jpg",
+          "tablet": "./assets/images/image-waffle-tablet.jpg",
+          "desktop": "./assets/images/image-waffle-desktop.jpg"
+        },
+        "name": "Apple Cinnamon Waffle",
+        "category": "Waffle",
+        "price": 6.50
+      },
+      {
+        "id" : 49,
+        "image": {
+          "thumbnail": "./assets/images/image-creme-brulee-thumbnail.jpg",
+          "mobile": "./assets/images/image-creme-brulee-mobile.jpg",
+          "tablet": "./assets/images/image-creme-brulee-tablet.jpg",
+          "desktop": "./assets/images/image-creme-brulee-desktop.jpg"
+        },
+        "name": "Caramel Crème Brûlée",
+        "category": "Crème Brûlée",
+        "price": 7.25
+      },
+      {
+        "id" : 50,
+        "image": {
+          "thumbnail": "./assets/images/image-creme-brulee-thumbnail.jpg",
+          "mobile": "./assets/images/image-creme-brulee-mobile.jpg",
+          "tablet": "./assets/images/image-creme-brulee-tablet.jpg",
+          "desktop": "./assets/images/image-creme-brulee-desktop.jpg"
+        },
+        "name": "Coconut Crème Brûlée",
+        "category": "Crème Brûlée",
+        "price": 7.50
+      },
+      {
+        "id" : 51,
+        "image": {
+          "thumbnail": "./assets/images/image-creme-brulee-thumbnail.jpg",
+          "mobile": "./assets/images/image-creme-brulee-mobile.jpg",
+          "tablet": "./assets/images/image-creme-brulee-tablet.jpg",
+          "desktop": "./assets/images/image-creme-brulee-desktop.jpg"
+        },
+        "name": "Chai Spiced Crème Brûlée",
+        "category": "Crème Brûlée",
+        "price": 7.75
+      },
+      {
+        "id" : 52,
+        "image": {
+          "thumbnail": "./assets/images/image-macaron-thumbnail.jpg",
+          "mobile": "./assets/images/image-macaron-mobile.jpg",
+          "tablet": "./assets/images/image-macaron-tablet.jpg",
+          "desktop": "./assets/images/image-macaron-desktop.jpg"
+        },
+        "name": "Salted Caramel Macarons",
+        "category": "Macaron",
+        "price": 7.50
+      },
+      {
+        "id" : 53,
+        "image": {
+          "thumbnail": "./assets/images/image-macaron-thumbnail.jpg",
+          "mobile": "./assets/images/image-macaron-mobile.jpg",
+          "tablet": "./assets/images/image-macaron-tablet.jpg",
+          "desktop": "./assets/images/image-macaron-desktop.jpg"
+        },
+        "name": "Earl Grey Macarons",
+        "category": "Macaron",
+        "price": 7.25
+      },
+      {
+        "id" : 54,
+        "image": {
+          "thumbnail": "./assets/images/image-macaron-thumbnail.jpg",
+          "mobile": "./assets/images/image-macaron-mobile.jpg",
+          "tablet": "./assets/images/image-macaron-tablet.jpg",
+          "desktop": "./assets/images/image-macaron-desktop.jpg"
+        },
+        "name": "Rose Macarons",
+        "category": "Macaron",
+        "price": 7.00
+      },
+      {
+        "id" : 55,
+        "image": {
+          "thumbnail": "./assets/images/image-tiramisu-thumbnail.jpg",
+          "mobile": "./assets/images/image-tiramisu-mobile.jpg",
+          "tablet": "./assets/images/image-tiramisu-tablet.jpg",
+          "desktop": "./assets/images/image-tiramisu-desktop.jpg"
+        },
+        "name": "Baileys Irish Cream Tiramisu",
+        "category": "Tiramisu",
+        "price": 6.75
+      },
+      {
+        "id" : 56,
+        "image": {
+          "thumbnail": "./assets/images/image-tiramisu-thumbnail.jpg",
+          "mobile": "./assets/images/image-tiramisu-mobile.jpg",
+          "tablet": "./assets/images/image-tiramisu-tablet.jpg",
+          "desktop": "./assets/images/image-tiramisu-desktop.jpg"
+        },
+        "name": "Hazelnut Tiramisu",
+        "category": "Tiramisu",
+        "price": 6.50
+      },
+      {
+        "id" : 57,
+        "image": {
+          "thumbnail": "./assets/images/image-tiramisu-thumbnail.jpg",
+          "mobile": "./assets/images/image-tiramisu-mobile.jpg",
+          "tablet": "./assets/images/image-tiramisu-tablet.jpg",
+          "desktop": "./assets/images/image-tiramisu-desktop.jpg"
+        },
+        "name": "Mint Chocolate Tiramisu",
+        "category": "Tiramisu",
+        "price": 6.25
+      },
+      {
+        "id" : 58,
+        "image": {
+          "thumbnail": "./assets/images/image-baklava-thumbnail.jpg",
+          "mobile": "./assets/images/image-baklava-mobile.jpg",
+          "tablet": "./assets/images/image-baklava-tablet.jpg",
+          "desktop": "./assets/images/image-baklava-desktop.jpg"
+        },
+        "name": "Cinnamon Baklava",
+        "category": "Baklava",
+        "price": 4.25
+      },
+      {
+        "id" : 59,
+        "image": {
+          "thumbnail": "./assets/images/image-baklava-thumbnail.jpg",
+          "mobile": "./assets/images/image-baklava-mobile.jpg",
+          "tablet": "./assets/images/image-baklava-tablet.jpg",
+          "desktop": "./assets/images/image-baklava-desktop.jpg"
+        },
+        "name": "Date Baklava",
+        "category": "Baklava",
+        "price": 4.50
+      },
+      {
+        "id" : 60,
+        "image": {
+          "thumbnail": "./assets/images/image-baklava-thumbnail.jpg",
+          "mobile": "./assets/images/image-baklava-mobile.jpg",
+          "tablet": "./assets/images/image-baklava-tablet.jpg",
+          "desktop": "./assets/images/image-baklava-desktop.jpg"
+        },
+        "name": "Cardamom Baklava",
+        "category": "Baklava",
+        "price": 4.75
+      },
+      {
+        "id" : 61,
+        "image": {
+          "thumbnail": "./assets/images/image-meringue-thumbnail.jpg",
+          "mobile": "./assets/images/image-meringue-mobile.jpg",
+          "tablet": "./assets/images/image-meringue-tablet.jpg",
+          "desktop": "./assets/images/image-meringue-desktop.jpg"
+        },
+        "name": "Coconut Meringue Pie",
+        "category": "Pie",
+        "price": 5.25
+      },
+      {
+        "id" : 62,
+        "image": {
+          "thumbnail": "./assets/images/image-meringue-thumbnail.jpg",
+          "mobile": "./assets/images/image-meringue-mobile.jpg",
+          "tablet": "./assets/images/image-meringue-tablet.jpg",
+          "desktop": "./assets/images/image-meringue-desktop.jpg"
+        },
+        "name": "Banana Cream Pie",
+        "category": "Pie",
+        "price": 5.50
+      },
+      {
+        "id" : 63,
+        "image": {
+          "thumbnail": "./assets/images/image-meringue-thumbnail.jpg",
+          "mobile": "./assets/images/image-meringue-mobile.jpg",
+          "tablet": "./assets/images/image-meringue-tablet.jpg",
+          "desktop": "./assets/images/image-meringue-desktop.jpg"
+        },
+        "name": "Peach Meringue Tart",
+        "category": "Tart",
+        "price": 5.75
+      },
+      {
+        "id" : 64,
+        "image": {
+          "thumbnail": "./assets/images/image-cake-thumbnail.jpg",
+          "mobile": "./assets/images/image-cake-mobile.jpg",
+          "tablet": "./assets/images/image-cake-tablet.jpg",
+          "desktop": "./assets/images/image-cake-desktop.jpg"
+        },
+        "name": "Coffee Walnut Cake",
+        "category": "Cake",
+        "price": 4.75
+      },
+      {
+        "id" : 65,
+        "image": {
+          "thumbnail": "./assets/images/image-cake-thumbnail.jpg",
+          "mobile": "./assets/images/image-cake-mobile.jpg",
+          "tablet": "./assets/images/image-cake-tablet.jpg",
+          "desktop": "./assets/images/image-cake-desktop.jpg"
+        },
+        "name": "Matcha Green Tea Cake",
+        "category": "Cake",
+        "price": 5.25
+      }
+]
