@@ -26,7 +26,7 @@ export const useProductList = defineStore('products', {
             search: "",
         },
         paginate: {
-            limit: 10,
+            limit: 9,
             offset: 0,
         },
         loading: true,
