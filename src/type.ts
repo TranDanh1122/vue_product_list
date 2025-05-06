@@ -5,6 +5,7 @@ interface Image {
     desktop: string
 }
 interface Product {
+    id : number,
     image: Image,
     name: string,
     category: string,

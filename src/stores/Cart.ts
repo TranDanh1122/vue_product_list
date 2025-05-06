@@ -9,16 +9,15 @@ export const useCart = defineStore("cart", {
         items: [] as CartItem[]
     }),
     actions: {
-        addToCart(item: Product, qty: number) {
-            const existItem = this.items.find(el => item.name.toLocaleLowerCase() == el.product.name.toLocaleLowerCase())
-            if (existItem) {
-                existItem.qty = qty
-            } else {
-                this.items.push({ product: item, qty: qty })
-            }
+        addToCart(item: Product) {
+            this.items.push({ product: item, qty: 1 })
         },
-        removeCart() {
-
+        removeCart(itemId : number) {
+            this.items = this.items.filter(el => el.product.id != itemId)
+        },
+        changeQty(itemId : number , qty : number) {
+            const updateItem = this.items.find(el => el.product.id == itemId)
+            if(updateItem) updateItem.qty = qty
         }
     },
 
