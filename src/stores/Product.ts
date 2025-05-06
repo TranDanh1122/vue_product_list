@@ -51,6 +51,16 @@ export const useProductList = defineStore('products', {
                 if (this.paginate.offset > 0)
                     this.paginate.offset = this.paginate.offset - this.paginate.limit
             }
+        },
+        changeSortBy(sortBy: keyof Product) {
+            this.filter.sortBy = sortBy
+        },
+        changeOrder(order: "asc" | "desc") {  
+           if(order != this.filter.sort)
+            this.filter.sort = order
+        },
+        search(val: string) {
+            this.filter.search = val
         }
     },
     getters: {
@@ -58,10 +68,10 @@ export const useProductList = defineStore('products', {
             return state.products.length
         },
         filteredProduct(state) {
-            let result = state.products
+            let result = [...state.products]
             if (state.filter.search) {
                 const searchStr = state.filter.search.toLocaleLowerCase().trim()
-                result = result.filter(prod => prod.name.toLocaleLowerCase() != searchStr)
+                result = result.filter(prod => prod.name.toLocaleLowerCase().includes(searchStr.toLocaleLowerCase()))
             }
             if (state.filter.sort) {
                 const sortBy = state.filter.sortBy
