@@ -59,5 +59,7 @@ export const useCart = defineStore<"cart", State, Getters, Actions>("cart", {
                 return item
             }
         }
-    }
+    },
+    // @ts-ignore
+    persist: true,
 })
