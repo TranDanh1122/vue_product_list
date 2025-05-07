@@ -1,12 +1,14 @@
 <script setup lang="ts">
+import useLayout from '../../composables/useLayout';
 import { useCart } from '../../stores/Cart';
 import CartContent from './components/CartContent.vue';
 import ConfirmOrder from './components/ConfirmOrder.vue';
 const cartStore = useCart()
+const layout = useLayout()
 
 </script>
 <template>
-    <div class="p-6 flex flex-col gap-6 bg-white w-1/3 rounded-md max-h-fit">
+    <div :class="`p-6 flex flex-col gap-6 bg-white ${layout == 'desktop' ? 'w-1/3' : 'w-full' } rounded-md max-h-fit`">
         <h2 class="text-2 text-red">Your Cart ({{ cartStore.getCart.qty }})</h2>
         <div v-if="cartStore.getCart.qty == 0">
             <img src="/assets/images/illustration-empty-cart.svg" alt="empty-cart"
