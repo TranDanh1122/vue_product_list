@@ -1,32 +1,38 @@
 import { defineStore } from "pinia"
 import type { Product } from "../type"
 import { fetchProductApi } from "../api/product"
-interface Filter {
-    sort: string,
-    sortBy: keyof Product,
-    search: string
-}
-interface Paginate {
-    limit: number,
-    offset: number
-}
-interface ProductGetters  {
-    filteredAllProduct: Product[]
-    filteredProduct: Product[]
-    isLastPage: boolean
-    numberOfPage: number
-    currentPage: number
-}
-interface ProductStoreState extends Partial<ProductGetters> {
+interface State {
     products: Product[],
-    filter: Filter,
-    paginate: Paginate,
+    filter: {
+        sort: "asc" | "desc",
+        sortBy: keyof Product,
+        search: string
+    },
+    paginate: {
+        limit: number,
+        offset: number
+    },
     loading: boolean,
-    errorMessages: string,
+    errorMessages: string
 }
-
-export const useProductList = defineStore('products', {
-    state: (): ProductStoreState => ({
+interface Getters extends Record<string, any> {
+    total(): number,
+    isFirstPage(): boolean,
+    isLastPage(): boolean,
+    numberOfPage(): number,
+    currentPage(): number,
+    filteredAllProduct(): Product[],
+    filteredProduct(): Product[],
+}
+interface Actions {
+    fetchProduct(): Promise<void>,
+    goToPage(type: string): void,
+    changeSortBy(sortBy: keyof Product): void,
+    changeOrder(order: "asc" | "desc"): void,
+    search(val: string): void,
+}
+export const useProductList = defineStore<'products', State, Getters, Actions>('products', {
+    state: () => ({
         products: [] as Product[],
         filter: {
             sort: "asc",
@@ -63,56 +69,56 @@ export const useProductList = defineStore('products', {
         changeSortBy(sortBy: keyof Product) {
             this.filter.sortBy = sortBy
         },
-        changeOrder(order: "asc" | "desc") {  
-           if(order != this.filter.sort)
-            this.filter.sort = order
+        changeOrder(order: "asc" | "desc") {
+            if (order != this.filter.sort)
+                this.filter.sort = order
         },
         search(val: string) {
             this.filter.search = val
-            this.paginate.offset = 0 
+            this.paginate.offset = 0
         }
     },
     getters: {
-        total() : number {
-            return this.filteredAllProduct?.length ?? 0
+        total(): number {
+            return this.filteredAllProduct.length ?? 0
         },
-        isFirstPage(state) {
-            return state.paginate.offset == 0
+        isFirstPage(): boolean {
+            return this.paginate.offset == 0
         },
-        isLastPage(state) {
-            return state.paginate.offset + state.paginate.limit >= (this.filteredAllProduct?.length  ?? 0)
+        isLastPage(): boolean {
+            return this.paginate.offset + this.paginate.limit >= (this.filteredAllProduct.length ?? 0)
         },
-        numberOfPage(state) {
-            return Math.ceil((this.filteredAllProduct?.length ?? 1) / state.paginate.limit)
+        numberOfPage() {
+            return Math.ceil((this.filteredAllProduct.length ?? this.products.length) / this.paginate.limit)
         },
-        currentPage(state) {
-            if(state.paginate.offset == 0) return 1
-            return Math.ceil(state.paginate.offset / state.paginate.limit ) + 1
+        currentPage(): number {
+            if (this.paginate.offset == 0) return 1
+            return Math.ceil(this.paginate.offset / this.paginate.limit) + 1
         },
 
-        filteredAllProduct (state) {
-            let result = [...state.products]
-            if (state.filter.search) {
-                const searchStr = state.filter.search.toLocaleLowerCase().trim()
+        filteredAllProduct(): Product[] {
+            let result = [...this.products]
+            if (this.filter.search) {
+                const searchStr = this.filter.search.toLocaleLowerCase().trim()
                 result = result.filter(prod => prod.name.toLocaleLowerCase().includes(searchStr.toLocaleLowerCase()))
             }
-            if (state.filter.sort) {
-                const sortBy = state.filter.sortBy
-                result = result.sort((a, b) => {
+            if (this.filter.sort) {
+                const sortBy = this.filter.sortBy
+                result = result.sort((a: Product, b: Product) => {
                     const firstVal = a[sortBy]
                     const secondVal = b[sortBy]
                     if (typeof firstVal == "number" && typeof secondVal == "number")
-                        return state.filter.sort == "asc" ? firstVal - secondVal : secondVal - firstVal
+                        return this.filter.sort == "asc" ? firstVal - secondVal : secondVal - firstVal
                     if (typeof firstVal == "string" && typeof secondVal == "string")
-                        return state.filter.sort == "asc" ? firstVal.localeCompare(secondVal) : secondVal.localeCompare(firstVal)
+                        return this.filter.sort == "asc" ? firstVal.localeCompare(secondVal) : secondVal.localeCompare(firstVal)
                     return 0
                 })
             }
             return result
         },
-        filteredProduct(state) {
+        filteredProduct(): Product[] {
             const result = this.filteredAllProduct ?? []
-            return result.slice(state.paginate.offset, state.paginate.offset + state.paginate.limit)
+            return result.slice(this.paginate.offset, this.paginate.offset + this.paginate.limit)
         },
     }
 })

@@ -13,6 +13,5 @@ const productStore = useProductList()
         </div>
         <Paginate />
     </div>
-
 </template>
 <style scoped></style>
