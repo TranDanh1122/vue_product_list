@@ -1,6 +1,6 @@
 import { defineStore } from "pinia"
 import type { Product } from "../type"
-interface CartItem {
+export interface CartItem {
     product: Product,
     qty: number,
 }
@@ -47,7 +47,6 @@ export const useCart = defineStore<"cart", State, Getters, Actions>("cart", {
                 const itemPrice = item.qty * item.product.price
                 return sum = { price: sum.price + itemPrice, qty: item.qty }
             }, { price: 0, qty: 0 })
-
             return {
                 total: price,
                 items: this.items,

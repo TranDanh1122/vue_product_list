@@ -9,7 +9,7 @@ const productStore = useProductList()
     <div class="w-full">
         <Filter />
         <div class="w-full flex items-stretch justify-start gap-6 flex-wrap">
-            <ProductItem v-for="(product, key) in productStore.filteredProduct" :key :product />
+            <ProductItem v-for="(product) in productStore.filteredProduct" :key="product.id" :product />
         </div>
         <Paginate />
     </div>
